@@ -144,6 +144,8 @@ a {
 /* section hero */
 
 .hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
   background-color: var(--second-background-color);
   text-align: center;
 }
@@ -152,8 +154,7 @@ a {
   width: 494px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 188px;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -161,7 +162,6 @@ a {
 }
 
 .button-hero {
-  margin-bottom: 188px;
   padding: 16px 32px;
   border: 0;
   border-radius: 4px;
@@ -292,7 +292,7 @@ img {
 
 .project {
   padding-top: 96px;
-  padding-bottom: 96px;
+  padding-bottom: 120px;
 }
 
 .filters {
@@ -301,7 +301,7 @@ img {
   min-width: 586px;
   justify-content: center;
   gap: 24px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .filter-btn {
@@ -330,12 +330,11 @@ img {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--indent);
+  gap: calc(var(--indent)*2) var(--indent);
 }
 
 .project-item {
-  margin-bottom: 24px;
-  flex-basis: calc((100% - (var(--indent)*(var(--items-portfolio)-1))) / var(--items-portfolio));
+  flex-basis: calc((100% - (var(--indent)*(var(--items-portfolio) - 1))) / var(--items-portfolio));
 }
 
 .card-txt {
